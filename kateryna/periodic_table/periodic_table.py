@@ -7,7 +7,7 @@ from typing import List
 TABLE_PATH = os.path.join(os.path.dirname(
     __file__), "Periodic Table of Elements.csv")
 
-
+# periodic table class
 class PeriodicTable:
     def __init__(self, root):
         self.df: pd.DataFrame = pd.read_csv(TABLE_PATH)
