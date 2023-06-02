@@ -1,0 +1,11 @@
+EPS = 1e-10
+print(abs(0.2 - (0.1 + 0.1)) < EPS)
+print(abs(0.3 - (0.1 + 0.2)) < EPS)
+print(abs(0.4 - (0.1 + 0.3)) < EPS)
+print(abs(0.5 - (0.1 + 0.4)) < EPS)
+print(abs(0.6 - (0.1 + 0.5)) < EPS)
+print(abs(0.7 - (0.1 + 0.6)) < EPS)
+print(abs(0.8 - (0.1 + 0.7)) < EPS)
+print(abs(0.9 - (0.1 + 0.8)) < EPS)
+print(abs(1.0 - (0.1 + 0.9)) < EPS)
+print(abs(1.0 - (0.1 + 0.9000000001)) < EPS)

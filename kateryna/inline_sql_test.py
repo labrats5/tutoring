@@ -1,0 +1,1 @@
+print(f"SELECT * FROM table;") 
