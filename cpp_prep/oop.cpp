@@ -5,6 +5,7 @@ using namespace std;
 
 enum Gender { male = 1, female = 2 };
 
+// comment
 class Animal {
    private:
     Gender gender;
