@@ -12,7 +12,7 @@ WORD_BANK = os.path.join(os.path.dirname(__file__), "word_bank.txt")
 class Wordle:
     def __init__(self, root: Union[tk.Tk, tk.Frame]):
         self.root = root
-        self.root.bind("<Return>", self.onReturnKey)
+        self.root.bind("<Control-R>", self.reset)
         self.valid_words = self.getValidWords()
         self.target_word = self.getTargetWord()
         self.hidden_frame = tk.Frame(root)
@@ -23,6 +23,7 @@ class Wordle:
         self.guess = tk.StringVar()
         self.guess.trace_add(mode="write", callback=self.displayWord)
         self.guess_box = tk.Entry(root, textvariable=self.guess)
+        self.guess_box.bind("<Return>", self.onReturnKey)
         self.word_grid = self.createSquares(self.grid_frame)
         self.current_row = 0
         self.qwerty_top = tk.Frame()
